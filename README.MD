@@ -13,11 +13,8 @@ This Project are deployed to fill a requirement of Mister Aladin Job Vacancies f
 
 #### Used Library
 
-- Body Parser
-- Nodemon
-- ByCript
-- Redis
-- Sequelize
+- Mocha
+- Chai
 
 ## Installation
 
