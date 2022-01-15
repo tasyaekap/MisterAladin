@@ -30,6 +30,6 @@ npm install
 
 3. Run on terminal to test all the submitted answer
 ```html
-npm start
+npm run test
 ```
 
