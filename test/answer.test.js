@@ -8,7 +8,7 @@ describe('answer.js tests', () => {
             expect(result).to.equal(2);
         });
         it('should return 2', () => {
-            const result = answer.AdditivePersistence(19);;
+            const result = answer.AdditivePersistence(19)
             expect(result).to.equal(2);
         });
         it('should return 0', () => {

@@ -2,12 +2,11 @@ const answer = {}
 //answer for first question
 
 answer.AdditivePersistence = (num) => {
-    num = num;
     let res = 0;
     while(num > 9){
         num = sum(num);
         res++;
-    };
+    }
     return res;
 }
 
@@ -26,7 +25,7 @@ function sum(num){
 answer.LetterCount = (sentence) => {
 	var arrWords = sentence.split(' ');
     var duplicatedWords = [];
-    for (word of arrWords) {
+    for (const word of arrWords) {
     	duplicatedWords.push(countDuplicate(word))
     }
     
