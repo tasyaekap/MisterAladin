@@ -2,12 +2,11 @@ const answer = {}
 //answer for first question
 
 answer.AdditivePersistence = (num) => {
-    num = num;
     let res = 0;
     while(num > 9){
         num = sum(num);
         res++;
-    };
+    }
     return res;
 }
 
@@ -26,7 +25,7 @@ function sum(num){
 answer.LetterCount = (sentence) => {
 	var arrWords = sentence.split(' ');
     var duplicatedWords = [];
-    for (word of arrWords) {
+    for (const word of arrWords) {
     	duplicatedWords.push(countDuplicate(word))
     }
     
@@ -56,7 +55,7 @@ function countDuplicate(word) {
 // begitu reach panjang arraynya n , ambil dua huruf pertama
 // terus begitu reach sisa str 2, ambil dari yang terakhir ke yang pertama. 
 
-function solution(string, numberOfLoop){
+answer.Solution = (string, numberOfLoop) => {
     let arrOfWords = string.split('')
     let restOfTheWords = string.split('')
     const newString = []
@@ -81,7 +80,7 @@ function solution(string, numberOfLoop){
     }
     count++
     console.log(count)
-    return newString;
+    return newString.join('');
 }
 
 module.exports = answer; 

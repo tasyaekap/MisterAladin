@@ -8,7 +8,7 @@ describe('answer.js tests', () => {
             expect(result).to.equal(2);
         });
         it('should return 2', () => {
-            const result = answer.AdditivePersistence(19);;
+            const result = answer.AdditivePersistence(19)
             expect(result).to.equal(2);
         });
         it('should return 0', () => {
@@ -25,9 +25,19 @@ describe('answer.js tests', () => {
             const result = answer.LetterCount("Hello apple pie");;
             expect(result).to.equal("Hello");
         });
+        it('should return `appple`', () => {
+            const result = answer.LetterCount("Hello appple pie");;
+            expect(result).to.equal("appple");
+        });
         it('should return -1', () => {
             const result = answer.LetterCount("No Words");;
             expect(result).to.equal(-1);
+        });
+    });
+    describe('Third question answer', () => {
+        it('should return `MEAIANLTSRID`', () => {
+            const result = answer.Solution("MISTERALADIN",4);
+            expect(result).to.equal("MEAIANLTSRID");
         });
     });
 });
