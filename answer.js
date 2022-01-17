@@ -56,7 +56,7 @@ function countDuplicate(word) {
 // begitu reach panjang arraynya n , ambil dua huruf pertama
 // terus begitu reach sisa str 2, ambil dari yang terakhir ke yang pertama. 
 
-function solution(string, numberOfLoop){
+answer.Solution = (string, numberOfLoop) => {
     let arrOfWords = string.split('')
     let restOfTheWords = string.split('')
     const newString = []
@@ -81,7 +81,7 @@ function solution(string, numberOfLoop){
     }
     count++
     console.log(count)
-    return newString;
+    return newString.join('');
 }
 
 module.exports = answer; 
